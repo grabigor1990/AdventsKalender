@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/img.png');
+    background-size: cover;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.door {
+    width: 140px;
+    height: 110px;
+    border: 1px solid #fff;
+    color: #1ccc9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 5.5rem;
+    cursor: pointer;
+    flex: none;
+    overflow: hidden;
+}
+
+.door.opened {
+    background-color: #1b77ad;
+    color: rgba(51, 51, 51, 0.82);
+}
+
+
+.message {
+    padding-left: 5px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
